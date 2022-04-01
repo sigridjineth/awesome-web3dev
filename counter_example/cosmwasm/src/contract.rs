@@ -11,15 +11,19 @@ use crate::state::{State, STATE};
 const CONTRACT_NAME: &str = "crates.io:cosmwasm";
 const CONTRACT_VERSION: &str = env!("CARGO_PKG_VERSION");
 
+// constructor which is called during contract instantiation to provide initial state
 #[cfg_attr(not(feature = "library"), entry_point)]
 pub fn instantiate(
     deps: DepsMut,
     _env: Env,
     info: MessageInfo,
+    // the contract
     msg: InstantiateMsg,
 ) -> Result<Response, ContractError> {
     let state = State {
+        // ```count``` is assigned the count from the message. (check msg.rs)
         count: msg.count,
+        // ```owner``` is assigned to the sender of the ```MsgInstantiateContract``` (check msg.rs)
         owner: info.sender.clone(),
     };
     set_contract_version(deps.storage, CONTRACT_NAME, CONTRACT_VERSION)?;
@@ -31,13 +35,19 @@ pub fn instantiate(
         .add_attribute("count", msg.count.to_string()))
 }
 
+// When implementing a contract, we are encountered with ```execute``` function as an entry point.
+// execute(): gets called when a user wants to invoke a method on the smart contract
 #[cfg_attr(not(feature = "library"), entry_point)]
 pub fn execute(
+    // DepsMut: Reading and Writing to the backing ```storage```. If done, returns Ok or Err.
+    // If it returns Ok, the Response (response.rs) object is parsed and processed.
     deps: DepsMut,
     _env: Env,
     info: MessageInfo,
     msg: ExecuteMsg,
 ) -> Result<Response, ContractError> {
+    // The attribute uses Rust's pattern matching to route the received ```ExecuteMsg``` to the appropriate handling logic
+    // which is either dispatch a ```try_increment(deps)``` or ```try_reset()``` call depending on the message received
     match msg {
         ExecuteMsg::Increment {} => try_increment(deps),
         ExecuteMsg::Reset { count } => try_reset(deps, info, count),
@@ -45,15 +55,20 @@ pub fn execute(
 }
 
 pub fn try_increment(deps: DepsMut) -> Result<Response, ContractError> {
+    // 1. STATE : acquiring a mutable reference to the storage to update the item located at the key "state"
+    // which is to make accessible through the STATE convenience function defined in the ```src/state.rs```.
     STATE.update(deps.storage, |mut state| -> Result<_, ContractError> {
         state.count += 1;
+        // 2. update the count of present state by returning an Ok result with the new state.
         Ok(state)
     })?;
 
+    // 3. terminate the contract execution with an acknowledgement of success by returning an Ok result with the default Response.
     Ok(Response::new().add_attribute("method", "try_increment"))
 }
 
 pub fn try_reset(deps: DepsMut, info: MessageInfo, count: i32) -> Result<Response, ContractError> {
+    // validating the message sender is permitted to invoke the reset function
     STATE.update(deps.storage, |mut state| -> Result<_, ContractError> {
         if info.sender != state.owner {
             return Err(ContractError::Unauthorized {});
@@ -64,6 +79,9 @@ pub fn try_reset(deps: DepsMut, info: MessageInfo, count: i32) -> Result<Respons
     Ok(Response::new().add_attribute("method", "reset"))
 }
 
+// query(): gets called when a user wants to get data out of a smart contract
+// one need to define both a ```QueryMsg``` format, which represents requests
+// and provide ```CountResponse``` as an response to user through JSON.
 #[cfg_attr(not(feature = "library"), entry_point)]
 pub fn query(deps: Deps, _env: Env, msg: QueryMsg) -> StdResult<Binary> {
     match msg {
