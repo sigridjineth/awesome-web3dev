@@ -1,5 +1,68 @@
 # Counter Example for Terra/Cosmwasm Smart Contract
 
+## Deploy
+* set no-admin flag to render contract immutable
+```
+INIT='{"count": 2}'
+```
+```
+wasmd tx wasm instantiate $CODE_ID "$INIT" \
+    --from wallet --label "counter example" $TXFLAG -y --no-admin
+```
+* check whether a contract has deployed flawlessly
+```
+wasmd query wasm list-contract-by-code $CODE_ID $NODE --output json
+```
+```
+CONTRACT=$(wasmd query wasm list-contract-by-code $CODE_ID $NODE --output json | jq -r '.contracts[-1]')
+echo $CONTRACT
+```
+* querying the count variable
+```
+wasmd query wasm contract $CONTRACT $NODE
+```
+* querying a balance of the contract
+```
+wasmd query bank balances $CONTRACT $NODE
+```
+* dumping entire contract state
+```
+wasmd query wasm contract-state all $CONTRACT $NODE
+```
+* note that we prefix the key "config" with two bytes indicating its length
+```
+echo -n config | xxd -ps
+```
+* querying one key directly
+```
+wasmd query wasm contract-state raw $CONTRACT 636f6e666967 $NODE --hex
+```
+* attempting a smart query that executes against the contract
+```
+wasmd query wasm contract-state all $CONTRACT $NODE --output "json" | jq -r '.models[0].value' | base64 -d
+```
+* try incrementing the count
+```
+TRY_INCREMENT='{"increment": {"count": 3}}'
+```
+```
+wasmd tx wasm execute $CONTRACT "$TRY_INCREMENT" --amount 999upebble --from wallet $TXFLAG -y
+```
+* querying the count
+```
+QUERY='{"get_count":{}}'
+```
+```
+wasmd query wasm contract-state smart $CONTRACT "$QUERY" $NODE --output json
+```
+* reseting the count
+```
+RESET='{"reset": {"count": 123}}'
+```
+```
+wasmd tx wasm execute $CONTRACT "$RESET" --amount 999upebble --from wallet $TXFLAG -y
+```
+
 ## Introduction
 
 - The following factors should be taken into account while utilizing a smart contract on Ethereum.

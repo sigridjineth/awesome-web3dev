@@ -1,0 +1,1 @@
+52a64923790d8005aba4333817a0c3a03a36fe3ebfd8c5c18ac88a3bb7490757  ./target/wasm32-unknown-unknown/release/cosmwasm.wasm
