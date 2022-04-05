@@ -1,5 +1,5 @@
 # Counter Example for Terra/Cosmwasm Smart Contract
-
+* This contract has been created based on the cosmwasm network.
 ## Deploy
 * set no-admin flag to render contract immutable
 ```
@@ -110,8 +110,12 @@ pub const STATE: Item<State> = Item::new("state");
 ## Instantiate the contract
 
 - To deal with a instantiating contract, define the type of data/message to transmit in order to start the process. The message in the contract is to define a default `count`.
+- To implement support for ```MigrateMsg``` in Terra network, add the MigrateMsg block.
 
 ```Rust
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
+pub struct MigrateMsg {}
+
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 pub struct InstantiateMsg {
     pub count: i32,
@@ -119,8 +123,11 @@ pub struct InstantiateMsg {
 ```
 
 - Developers are expected to create the logic for what to do when such data/message is received.
+- It is expected to update ```contract.rs``` by adding ```MigrateMsg``` to import in ```crate:msg``` and add the method above ```instantiate``` method.
 
 ```Rust
+use crate::msg::{CountResponse, ExecuteMsg, InstantiateMsg, QueryMsg, MigrateMsg};
+
 #[cfg_attr(not(feature = "library"), entry_point)]
 pub fn instantiate(
     deps: DepsMut,
