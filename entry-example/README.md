@@ -63,7 +63,7 @@ fn demo() -> StdResult<()> {
     assert_eq!(cfg, loaded);
 ```
 
-![image-20220416151116631](/Users/sigridjin.eth/Library/Application Support/typora-user-images/image-20220416151116631.png)
+![Screen Shot 2022-04-16 at 3 11 08 PM](https://user-images.githubusercontent.com/41055141/163670071-3b3a0c93-db95-49af-b951-c55d27f20891.png)
 
 #### `update`
 
@@ -119,7 +119,7 @@ MyStruct::get_number(&obj);
 
 * This closure adds three to the number of any object of type `MyStruct` it has been given. It can be executed anywhere without any issues, and the compiler will not give you any trouble.
 
-![image-20220416155006580](/Users/sigridjin.eth/Library/Application Support/typora-user-images/image-20220416155006580.png)
+![Screen Shot 2022-04-16 at 3 49 35 PM](https://user-images.githubusercontent.com/41055141/163670070-77416477-a91e-4d18-8727-2210b4e33362.png)
 
 ```rust
 let obj1 = MyStruct::new("Hello", 15);
@@ -159,7 +159,7 @@ assert_eq!(obj1.get_number(), 15);
 // obj1.inc_number();               // ERROR
 ```
 
-![image-20220416154949710](/Users/sigridjin.eth/Library/Application Support/typora-user-images/image-20220416154949710.png)
+![Screen Shot 2022-04-16 at 3 49 58 PM](https://user-images.githubusercontent.com/41055141/163670069-4075f457-ee3d-4379-878e-bae3f8eaac2e.png)
 
 * If we try to rewrite our closure using `fn` syntax, everything we need to know inside of the function must be passed to it as an argument, so we add an additional argument to represent the context of the function.
 * Note that the `Context` struct contains an immutable reference to `MyStruct` indicating that we won’t be able to modify it inside the function.
@@ -187,7 +187,7 @@ assert_eq!(obj1.get_number(), 15);
 
 * If we modify `obj1` inside the closure, we get different results: This time we can’t borrow `obj1` mutably or immutably. (querying method also does not work.) We also have to annotate the closure as `mut`.
 
-![image-20220416161433706](/Users/sigridjin.eth/Library/Application Support/typora-user-images/image-20220416161433706.png)
+![Screen Shot 2022-04-16 at 4 14 23 PM](https://user-images.githubusercontent.com/41055141/163670068-6011e3b6-696d-4aac-ab1e-7a8251e17d18.png)
 
 ```rust
 let mut obj1 = MyStruct::new("Hello", 15);
