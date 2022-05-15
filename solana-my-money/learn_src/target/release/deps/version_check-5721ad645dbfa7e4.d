@@ -1,0 +1,10 @@
+/Users/sigridjin.eth/Documents/github/solana-my-money/learn_src/target/release/deps/version_check-5721ad645dbfa7e4.rmeta: /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/version_check-0.9.3/src/lib.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/version_check-0.9.3/src/version.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/version_check-0.9.3/src/channel.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/version_check-0.9.3/src/date.rs
+
+/Users/sigridjin.eth/Documents/github/solana-my-money/learn_src/target/release/deps/libversion_check-5721ad645dbfa7e4.rlib: /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/version_check-0.9.3/src/lib.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/version_check-0.9.3/src/version.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/version_check-0.9.3/src/channel.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/version_check-0.9.3/src/date.rs
+
+/Users/sigridjin.eth/Documents/github/solana-my-money/learn_src/target/release/deps/version_check-5721ad645dbfa7e4.d: /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/version_check-0.9.3/src/lib.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/version_check-0.9.3/src/version.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/version_check-0.9.3/src/channel.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/version_check-0.9.3/src/date.rs
+
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/version_check-0.9.3/src/lib.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/version_check-0.9.3/src/version.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/version_check-0.9.3/src/channel.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/version_check-0.9.3/src/date.rs:

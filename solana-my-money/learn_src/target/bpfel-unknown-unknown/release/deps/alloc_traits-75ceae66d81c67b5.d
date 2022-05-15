@@ -1,0 +1,10 @@
+/Users/sigridjin.eth/Documents/github/solana-my-money/learn_src/target/bpfel-unknown-unknown/release/deps/alloc_traits-75ceae66d81c67b5.rmeta: /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/alloc-traits-0.1.1/src/lib.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/alloc-traits-0.1.1/src/layout.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/alloc-traits-0.1.1/src/local.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/alloc-traits-0.1.1/src/util.rs
+
+/Users/sigridjin.eth/Documents/github/solana-my-money/learn_src/target/bpfel-unknown-unknown/release/deps/liballoc_traits-75ceae66d81c67b5.rlib: /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/alloc-traits-0.1.1/src/lib.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/alloc-traits-0.1.1/src/layout.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/alloc-traits-0.1.1/src/local.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/alloc-traits-0.1.1/src/util.rs
+
+/Users/sigridjin.eth/Documents/github/solana-my-money/learn_src/target/bpfel-unknown-unknown/release/deps/alloc_traits-75ceae66d81c67b5.d: /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/alloc-traits-0.1.1/src/lib.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/alloc-traits-0.1.1/src/layout.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/alloc-traits-0.1.1/src/local.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/alloc-traits-0.1.1/src/util.rs
+
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/alloc-traits-0.1.1/src/lib.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/alloc-traits-0.1.1/src/layout.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/alloc-traits-0.1.1/src/local.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/alloc-traits-0.1.1/src/util.rs:

@@ -1,0 +1,1 @@
+/Users/sigridjin.eth/Documents/github/solana-my-money/learn_src/target/bpfel-unknown-unknown/release/mymoneydapp.so: /Users/sigridjin.eth/Documents/github/solana-my-money/learn_src/programs/mymoneydapp/src/lib.rs

@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/sigridjin.eth/Documents/github/solana-my-money/learn_src/target/release/build/typenum-38231de6a8289b54/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/sigridjin.eth/Documents/github/solana-my-money/learn_src/target/release/build/typenum-38231de6a8289b54/out/op.rs

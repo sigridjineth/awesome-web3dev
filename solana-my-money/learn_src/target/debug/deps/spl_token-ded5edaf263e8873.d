@@ -1,0 +1,10 @@
+/Users/sigridjin.eth/Documents/github/solana-my-money/learn_src/target/debug/deps/spl_token-ded5edaf263e8873.rmeta: /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/lib.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/error.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/instruction.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/native_mint.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/processor.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/state.rs
+
+/Users/sigridjin.eth/Documents/github/solana-my-money/learn_src/target/debug/deps/spl_token-ded5edaf263e8873.d: /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/lib.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/error.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/instruction.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/native_mint.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/processor.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/state.rs
+
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/lib.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/error.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/instruction.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/native_mint.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/processor.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/spl-token-3.2.0/src/state.rs:

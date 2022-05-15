@@ -1,0 +1,11 @@
+/Users/sigridjin.eth/Documents/github/solana-my-money/learn_src/target/debug/deps/borsh-ed3966a534e5b1e3.rmeta: /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/lib.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/de/mod.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/de/hint.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/schema.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/schema_helpers.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/ser/mod.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/ser/helpers.rs
+
+/Users/sigridjin.eth/Documents/github/solana-my-money/learn_src/target/debug/deps/borsh-ed3966a534e5b1e3.d: /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/lib.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/de/mod.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/de/hint.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/schema.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/schema_helpers.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/ser/mod.rs /Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/ser/helpers.rs
+
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/lib.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/de/mod.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/de/hint.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/schema.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/schema_helpers.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/ser/mod.rs:
+/Users/sigridjin.eth/.cargo/registry/src/github.com-1ecc6299db9ec823/borsh-0.9.1/src/ser/helpers.rs:
