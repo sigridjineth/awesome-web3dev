@@ -10,7 +10,7 @@ pub mod counter_anchor {
         Ok(())
     }
 
-    pub fn increase(ctx: Context<Increase>, increment: u64) -> Result<()> {
+    pub fn increase(ctx: Context<Increase>, increment: &u64) -> Result<()> {
         let counter_account = &mut ctx.accounts.counter_account;
         let current_count = &counter_account.count;
 
@@ -20,6 +20,19 @@ pub mod counter_anchor {
         }
         
         counter_account.count = u64::MAX;
+        return Ok(())
+    }
+
+    pub fn decrease(ctx: Context<Decrease>, decrement: &u64) -> Result<()> {
+        let counter_account = &mut ctx.accounts.counter_account;
+        let current_count = &counter_account.count;
+
+        if u64::MAX - current_count >= decrement {
+            counter_account.count = current_count - decrement;
+            return Ok(());
+        }
+        
+        counter_account.count = 0;
         return Ok(())
     }
 }
@@ -59,6 +72,12 @@ pub struct Initialize<'info> {
 
 #[derive(Accounts)]
 pub struct Increase<'info> {
+    #[account(mut)]
+    pub counter_account: Account<'info, Counter>
+}
+
+#[derive(Accounts)]
+pub struct Decrease<'info> {
     #[account(mut)]
     pub counter_account: Account<'info, Counter>
 }
