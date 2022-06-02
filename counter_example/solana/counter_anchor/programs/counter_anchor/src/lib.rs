@@ -9,6 +9,19 @@ pub mod counter_anchor {
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
         Ok(())
     }
+
+    pub fn increase(ctx: Context<Increase>, increment: u64) -> Result<()> {
+        let counter_account = &mut ctx.accounts.counter_account;
+        let current_count = &counter_account.count;
+
+        if u64::MAX - current_count >= increment {
+            counter_account.count = current_count + increment;
+            return Ok(());
+        }
+        
+        counter_account.count = u64::MAX;
+        return Ok(())
+    }
 }
 
 /*
@@ -42,6 +55,12 @@ pub struct Initialize<'info> {
     */
     #[account(mut)]
     pub user: Signer<'info>
+}
+
+#[derive(Accounts)]
+pub struct Increase<'info> {
+    #[account(mut)]
+    pub counter_account: Account<'info, Counter>
 }
 
 /*
