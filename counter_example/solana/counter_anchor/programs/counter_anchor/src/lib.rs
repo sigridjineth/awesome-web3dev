@@ -7,10 +7,12 @@ pub mod counter_anchor {
     use super::*;
 
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
-        Ok(())
+        let counter_account = &mut ctx.accounts.counter_account;
+        counter_account.count = 0;
+        return Ok(())
     }
 
-    pub fn increase(ctx: Context<Increase>, increment: &u64) -> Result<()> {
+    pub fn increase(ctx: Context<Increase>, increment: u64) -> Result<()> {
         let counter_account = &mut ctx.accounts.counter_account;
         let current_count = &counter_account.count;
 
@@ -23,7 +25,7 @@ pub mod counter_anchor {
         return Ok(())
     }
 
-    pub fn decrease(ctx: Context<Decrease>, decrement: &u64) -> Result<()> {
+    pub fn decrease(ctx: Context<Decrease>, decrement: u64) -> Result<()> {
         let counter_account = &mut ctx.accounts.counter_account;
         let current_count = &counter_account.count;
 
