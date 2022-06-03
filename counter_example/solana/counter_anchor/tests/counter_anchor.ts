@@ -12,6 +12,8 @@ describe("counter_anchor", async () => {
 
   const program = anchor.workspace.CounterAnchor as Program<CounterAnchor>;
 
+  // It’s important to note that our seed does not have to be hardcoded. A common practice is to generate PDAs using the public key of your user's wallet,
+  // allowing our program to store information about that user in its standalone account so that you would end up with a feature similar to a hashmap:
   const [counterAccount, counterAccountBump] =
     await anchor.web3.PublicKey.findProgramAddress(
       [Buffer.from("counter_account")],

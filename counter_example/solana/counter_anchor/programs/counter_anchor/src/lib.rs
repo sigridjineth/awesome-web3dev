@@ -46,6 +46,10 @@ pub mod counter_anchor {
     and the Accounts trait determines how this structure can be created from the result of the deserialize function. 
 */
 #[derive(Accounts)]
+/*
+    Programs can own accounts using PDAs. By assigning PDAs to accounts, a program can claim ownership of accounts without having to deal with public and private keys.
+    With PDAs, a program can sign for specific addresses without a private key. Since PDAs are not public keys, they have no associated private keys.
+*/
 #[instruction(counter_account_bump: u8)]
 pub struct Initialize<'info> {
     pub system_program: Program<'info, System>,
