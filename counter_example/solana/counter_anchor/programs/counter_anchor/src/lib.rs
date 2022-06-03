@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("3GCv7hWQa91ddxieEN3fxWMpcRrE365gK6wMNg75k6ao");
 
 #[program]
 pub mod counter_anchor {
@@ -14,7 +14,7 @@ pub mod counter_anchor {
 
     pub fn increase(ctx: Context<Increase>, increment: u64) -> Result<()> {
         let counter_account = &mut ctx.accounts.counter_account;
-        let current_count = &counter_account.count;
+        let current_count = counter_account.count;
 
         if u64::MAX - current_count >= increment {
             counter_account.count = current_count + increment;
@@ -27,9 +27,9 @@ pub mod counter_anchor {
 
     pub fn decrease(ctx: Context<Decrease>, decrement: u64) -> Result<()> {
         let counter_account = &mut ctx.accounts.counter_account;
-        let current_count = &counter_account.count;
+        let current_count = counter_account.count;
 
-        if u64::MAX - current_count >= decrement {
+        if current_count >= decrement {
             counter_account.count = current_count - decrement;
             return Ok(());
         }
