@@ -1,5 +1,5 @@
 [features]
-seeds = false
+seeds = true
 
 [programs.localnet]
 counter_anchor = "3GCv7hWQa91ddxieEN3fxWMpcRrE365gK6wMNg75k6ao"

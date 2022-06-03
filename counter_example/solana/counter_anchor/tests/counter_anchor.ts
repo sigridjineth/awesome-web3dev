@@ -4,23 +4,31 @@ import { assert } from "chai";
 import { CounterAnchor } from "../target/types/counter_anchor";
 const { SystemProgram } = anchor.web3;
 
-describe("counter_anchor", () => {
+describe("counter_anchor", async () => {
   // Configure the client to use the local cluster.
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
-  const counterAccount = anchor.web3.Keypair.generate();
+  // const counterAccount = anchor.web3.Keypair.generate();
 
   const program = anchor.workspace.CounterAnchor as Program<CounterAnchor>;
 
+  const [counterAccount, counterAccountBump] =
+    await anchor.web3.PublicKey.findProgramAddress(
+      [Buffer.from("counter_account")],
+      program.programId
+  );
+
   it("should be initialized!", async () => {
-    await program.rpc.initialize({
+    await program.rpc.initialize(counterAccountBump, {
       accounts: {
-        counterAccount: counterAccount.publicKey,
+        counterAccount,
         user: provider.wallet.publicKey,
-        systemProgram: SystemProgram.programId
-      },
-      signers: [counterAccount]
+        systemProgram: anchor.web3.SystemProgram.programId,
+      }
     })
+
+    const countState = await program.account.counter.fetch(counterAccount);
+    assert.exists(countState.count)
   });
 
   it("should increment counts correctly from `1`", async() => {
@@ -30,12 +38,12 @@ describe("counter_anchor", () => {
     // when
     await program.rpc.increase(new anchor.BN(NUMBER_ONE), {
       accounts: {
-        counterAccount: counterAccount.publicKey
+        counterAccount,
       }
     })
 
     // then
-    const counter = await program.account.counter.fetch(counterAccount.publicKey);
+    const counter = await program.account.counter.fetch(counterAccount);
     assert.ok(counter.count.toString() === NUMBER_ONE);
   });
 
@@ -46,12 +54,12 @@ describe("counter_anchor", () => {
     // when
     await program.rpc.increase(new anchor.BN(U64_MAX), {
       accounts: {
-        counterAccount: counterAccount.publicKey
+        counterAccount,
       }
     })
 
     // then
-    const counter = await program.account.counter.fetch(counterAccount.publicKey);
+    const counter = await program.account.counter.fetch(counterAccount);
     assert.ok(counter.count.toString() === U64_MAX);
   });
 
@@ -63,12 +71,12 @@ describe("counter_anchor", () => {
     // when
     await program.rpc.decrease(new anchor.BN(U64_MAX), {
       accounts: {
-        counterAccount: counterAccount.publicKey
+        counterAccount: counterAccount
       }
     })
 
     // then
-    const counter = await program.account.counter.fetch(counterAccount.publicKey);
+    const counter = await program.account.counter.fetch(counterAccount);
     assert.ok(counter.count.toString() === NUMBER_ZERO);
   });
 
@@ -80,12 +88,12 @@ describe("counter_anchor", () => {
     // when
     await program.rpc.decrease(new anchor.BN(NUMBER_ONE), {
       accounts: {
-        counterAccount: counterAccount.publicKey
+        counterAccount: counterAccount
       }
     })
 
     // then
-    const counter = await program.account.counter.fetch(counterAccount.publicKey);
+    const counter = await program.account.counter.fetch(counterAccount);
     assert.ok(counter.count.toString() === NUMBER_ZERO);
   });
 });

@@ -6,9 +6,10 @@ declare_id!("3GCv7hWQa91ddxieEN3fxWMpcRrE365gK6wMNg75k6ao");
 pub mod counter_anchor {
     use super::*;
 
-    pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
+    pub fn initialize(ctx: Context<Initialize>, counter_account_bump: u8) -> Result<()> {
         let counter_account = &mut ctx.accounts.counter_account;
         counter_account.count = 0;
+        ctx.accounts.counter_account.bump = counter_account_bump;
         return Ok(())
     }
 
@@ -45,6 +46,7 @@ pub mod counter_anchor {
     and the Accounts trait determines how this structure can be created from the result of the deserialize function. 
 */
 #[derive(Accounts)]
+#[instruction(counter_account_bump: u8)]
 pub struct Initialize<'info> {
     pub system_program: Program<'info, System>,
     /*
@@ -61,7 +63,7 @@ pub struct Initialize<'info> {
         You can omit this and Anchor will automatically calculate the needed space,
         but if your structure includes dynamically sized values such as Strings or Vecs then this won’t work right.
     */
-    #[account(init, payer = user, space = 8 + 8)]
+    #[account(init, space = 8 + 41, seeds = [b"counter_account".as_ref()], payer = user, bump)]
     pub counter_account: Account<'info, Counter>,
 
     /*
@@ -74,7 +76,7 @@ pub struct Initialize<'info> {
 
 #[derive(Accounts)]
 pub struct Increase<'info> {
-    #[account(mut)]
+    #[account(mut, seeds = [b"counter_account".as_ref()], bump = counter_account.bump)]
     pub counter_account: Account<'info, Counter>
 }
 
@@ -95,6 +97,8 @@ pub struct Decrease<'info> {
     each account assigns an owner contract which has exclusive control over state mutations.
 */
 #[account]
+#[derive(Default)]
 pub struct Counter {
-    pub count: u64
+    pub count: u64,
+    pub bump: u8
 }
