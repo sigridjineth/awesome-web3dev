@@ -18,6 +18,7 @@ module my_first_package::m1 {
     #[test]
     public fun test_sword_create() {
         use sui::tx_context;
+        use sui::transfer;
 
         // create a dummy instance of TXContext so that to create sword object
         let ctx = tx_context::dummy();
@@ -32,5 +33,9 @@ module my_first_package::m1 {
 
         // check if accessor function returns correct values
         assert!(magic(&sword) == 42 && strength(&sword) == 7, 1);
+
+        // create a dummy address and transfer the sword
+        let dummy_address = @0xCAFE;
+        transfer::transfer(sword, dummy_address);
     }
 }
