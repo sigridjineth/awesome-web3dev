@@ -1,0 +1,55 @@
+2022-07-06T10:53:24.003901Z  INFO sui::wallet_commands: 0x295d6afe5577082062b7ea33b242c6db9c4b5f74
+2022-07-06T13:40:04.634580Z  INFO sui::wallet_commands: Showing 2 results.
+2022-07-06T13:40:04.635955Z  INFO sui::wallet_commands: 0x295d6afe5577082062b7ea33b242c6db9c4b5f74
+2022-07-06T13:40:04.635958Z  INFO sui::wallet_commands: 0x820290eea6e258dec3d215f3a48cee5ea3b04ad2
+2022-07-06T13:43:49.516397Z  INFO sui::wallet_commands:                  Object ID                  |  Version   |                    Digest                    |   Owner Type    |               Object Type               
+2022-07-06T13:43:49.522095Z  INFO sui::wallet_commands: ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2022-07-06T13:43:49.522104Z  INFO sui::wallet_commands:  0x12ec06b07e78fc8a7e0e6cf0f4bd62a3984bd217 |     5      | l+SLwuDpJj350MefMo3h6aXpohXSWmhjLNafMPWOMV0= |  AddressOwner   |      0x2::coin::Coin<0x2::sui::SUI>     
+2022-07-06T13:43:49.522108Z  INFO sui::wallet_commands:  0x3a6c8387397f1e575df0213a31ab7accc40eff94 |     2      | LuTs2GTQ1JVMx/MURyfLcCHVQ5YKq2ItoD9GTEIvi7A= |  AddressOwner   |      0x2::coin::Coin<0x2::sui::SUI>     
+2022-07-06T13:43:49.522112Z  INFO sui::wallet_commands:  0x41cbd577ce5cf748ba14d98fee4045cd4de6a259 |     2      | FzN5gjJgEcAQ2gkbrPuoFwzzibD6t5xGvZRSnb+rpeU= |  AddressOwner   | 0xf5434d166d1bdb9667f9130067cd1cd883690fc5::m1::Forge
+2022-07-06T13:43:49.522122Z  INFO sui::wallet_commands:  0x4b6585a73218f5a5b568996f9c15460e11845ef5 |     1      | 93A9+rBjH2Nf+xGrLSIr2eQL0goTduqvohu+lGFg4+I= |  AddressOwner   |        0x2::devnet_nft::DevNetNFT       
+2022-07-06T13:43:49.522125Z  INFO sui::wallet_commands:  0x6f8df733d1388bdca1a33b46b900c08a14c8abab |     2      | FXlRe+xu2+qenRKKLc4WEJhUjpFzi1+SGv8OmnDH6z4= |  AddressOwner   |      0x2::coin::Coin<0x2::sui::SUI>     
+2022-07-06T13:43:49.522348Z  INFO sui::wallet_commands:  0x969ac9b23a7b6e5840a504a517cdab0d9f50ce11 |     2      | lYbbKKE5ON7iJwAjAEqvvKgAZhRcmtdwXNj6968l+zw= |  AddressOwner   |      0x2::coin::Coin<0x2::sui::SUI>     
+2022-07-06T13:43:49.522357Z  INFO sui::wallet_commands:  0xcd87828024a1e797c8b6ca4398cd868dea07444f |     2      | b/PsrPrNPPVkhoMw7cklORgQC70iNDdjYXEsWQH39hU= |  AddressOwner   |      0x2::coin::Coin<0x2::sui::SUI>     
+2022-07-06T13:43:49.522360Z  INFO sui::wallet_commands: Showing 7 results.
+2022-07-06T13:44:18.440495Z  INFO sui::wallet_commands: Active gateway switched to https://gateway.devnet.sui.io:443/
+2022-07-06T13:45:22.147870Z  INFO sui_storage::lock_service: LockService queries processing loop started
+2022-07-06T13:45:22.147910Z  INFO sui_storage::lock_service: LockService command processing loop started
+2022-07-06T13:45:22.163860Z  INFO sui_storage::lock_service: LockService queries loop stopped, the sender on other end hung up/dropped
+2022-07-06T13:45:22.163859Z  INFO sui_storage::lock_service: LockService command loop stopped, the sender on other end hung up/dropped
+2022-07-06T13:45:28.042656Z  INFO sui_storage::lock_service: LockService command processing loop started
+2022-07-06T13:45:28.042657Z  INFO sui_storage::lock_service: LockService queries processing loop started
+2022-07-06T13:45:28.049961Z  INFO sui_storage::lock_service: LockService command loop stopped, the sender on other end hung up/dropped
+2022-07-06T13:45:28.049962Z  INFO sui_storage::lock_service: LockService queries loop stopped, the sender on other end hung up/dropped
+2022-07-06T13:45:56.586751Z  INFO sui_storage::lock_service: LockService command processing loop started
+2022-07-06T13:45:56.586756Z  INFO sui_storage::lock_service: LockService queries processing loop started
+2022-07-06T13:45:56.593497Z  INFO sui::wallet_commands: Active gateway switched to https://gateway.devnet.sui.io:443
+2022-07-06T13:45:56.594000Z  INFO sui_storage::lock_service: LockService command loop stopped, the sender on other end hung up/dropped
+2022-07-06T13:45:56.594004Z  INFO sui_storage::lock_service: LockService queries loop stopped, the sender on other end hung up/dropped
+2022-07-06T13:46:00.780316Z  INFO sui::wallet_commands: Showing 5 results.
+2022-07-06T13:46:00.780402Z  INFO sui::wallet_commands: 0x76705799eaef88a5378bf616fab44c96e0b8dc05
+2022-07-06T13:46:00.780406Z  INFO sui::wallet_commands: 0x9f67952f0fe64b790c169d6bc3e97f0275f9876d
+2022-07-06T13:46:00.780411Z  INFO sui::wallet_commands: 0x86e29705c42a304a85c16b095892e5c877768113
+2022-07-06T13:46:00.780414Z  INFO sui::wallet_commands: 0xc6fce00f0ec0b8bb66c6e03bbeb0f9c2c6c7a555
+2022-07-06T13:46:00.780418Z  INFO sui::wallet_commands: 0xa57bf4d15156534533f20576bea6961e1e0696ad
+2022-07-06T13:50:02.242181Z  INFO sui::wallet_commands: Active gateway switched to https://gateway.devnet.sui.io:443
+2022-07-06T13:52:05.606776Z  INFO sui::wallet_commands: Showing 5 results.
+2022-07-06T13:52:05.608684Z  INFO sui::wallet_commands: 0x76705799eaef88a5378bf616fab44c96e0b8dc05
+2022-07-06T13:52:05.608688Z  INFO sui::wallet_commands: 0x9f67952f0fe64b790c169d6bc3e97f0275f9876d
+2022-07-06T13:52:05.608690Z  INFO sui::wallet_commands: 0x86e29705c42a304a85c16b095892e5c877768113
+2022-07-06T13:52:05.608692Z  INFO sui::wallet_commands: 0xc6fce00f0ec0b8bb66c6e03bbeb0f9c2c6c7a555
+2022-07-06T13:52:05.608694Z  INFO sui::wallet_commands: 0xa57bf4d15156534533f20576bea6961e1e0696ad
+2022-07-06T13:52:14.740232Z  INFO sui::wallet_commands: 0x76705799eaef88a5378bf616fab44c96e0b8dc05
+2022-07-06T13:53:05.012276Z  INFO sui::wallet_commands: [1mSuccessfully created an ExampleNFT:[0m
+2022-07-06T13:53:05.013724Z  INFO sui::wallet_commands: 
+2022-07-06T13:53:05.013732Z  INFO sui::wallet_commands: [1m----- Move Object (0x2f62f92d16d638a5dd8ba11620ab94fafba5fa5b[1]) -----[0m
+2022-07-06T13:53:05.013738Z  INFO sui::wallet_commands: [1;90mOwner[0m: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-06T13:53:05.013742Z  INFO sui::wallet_commands: [1;90mVersion[0m: 1
+2022-07-06T13:53:05.013746Z  INFO sui::wallet_commands: [1;90mStorage Rebate[0m: 25
+2022-07-06T13:53:05.013749Z  INFO sui::wallet_commands: [1;90mPrevious Transaction[0m: q6PBHYgmwuvgrjlbjjqq9s7hoBmqhAK4TyQ1E+1N47A=
+2022-07-06T13:53:05.013752Z  INFO sui::wallet_commands: [1m----- Data -----[0m
+2022-07-06T13:53:05.013756Z  INFO sui::wallet_commands: [1;90mtype[0m: 0x2::devnet_nft::DevNetNFT
+2022-07-06T13:53:05.013758Z  INFO sui::wallet_commands: [1;90mdescription[0m: An NFT created by the wallet Command Line Tool
+2022-07-06T13:53:05.013761Z  INFO sui::wallet_commands: [1;90mid[0m: 0x2f62f92d16d638a5dd8ba11620ab94fafba5fa5b[1]
+2022-07-06T13:53:05.013764Z  INFO sui::wallet_commands: [1;90mname[0m: Example NFT
+2022-07-06T13:53:05.013767Z  INFO sui::wallet_commands: [1;90murl[0m: ipfs://bafkreibngqhl3gaa7daob4i2vccziay2jjlp435cf66vhono7nrvww53ty
