@@ -14,4 +14,23 @@ module my_first_package::m1 {
     public fun strength(self: &Sword): u64 {
         self.strength
     }
+
+    #[test]
+    public fun test_sword_create() {
+        use sui::tx_context;
+
+        // create a dummy instance of TXContext so that to create sword object
+        let ctx = tx_context::dummy();
+
+        // create a sword
+        let sword = Sword {
+            // dummy context is passed to `tx_context::new_id`
+            id: tx_context::new_id(&mut ctx),
+            magic: 42,
+            strength: 7
+        };
+
+        // check if accessor function returns correct values
+        assert!(magic(&sword) == 42 && strength(&sword) == 7, 1);
+    }
 }
