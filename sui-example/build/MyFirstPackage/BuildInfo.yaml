@@ -1,0 +1,21 @@
+---
+compiled_package_info:
+  package_name: MyFirstPackage
+  address_alias_instantiation:
+    my_first_package: "0000000000000000000000000000000000000000"
+    std: "0000000000000000000000000000000000000001"
+    sui: "0000000000000000000000000000000000000002"
+  source_digest: E273391DF9E5021FA320C136B217C3E07EE6F284419DC4121EC3DE3C3D6CD473
+  build_flags:
+    dev_mode: true
+    test_mode: true
+    generate_docs: false
+    generate_abis: false
+    install_dir: ~
+    force_recompilation: false
+    additional_named_addresses: {}
+    architecture: ~
+    only_deps: false
+dependencies:
+  - MoveStdlib
+  - Sui
