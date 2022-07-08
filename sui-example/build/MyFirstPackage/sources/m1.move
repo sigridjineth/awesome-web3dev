@@ -2,6 +2,31 @@ module my_first_package::m1 {
     use sui::id::VersionedID;
     use sui::tx_context::TxContext;
 
+    struct Forge has key, store {
+        id: VersionedID,
+        swords_created: u64,
+    }
+
+    public fun sword_created(self: &Forge): u64 {
+        self.swords_created
+    }
+
+    // module initializer to be executed when this module is published
+    fun init(ctx: &mut TxContext) {
+        use sui::transfer;
+        use sui::tx_context;
+
+        // In order to keep track of the number of created swords we must initialize the forge object
+        // and set its sword_create counts to 0. And module initializer is the perfect place to do it:
+        let admin = Forge {
+            id: tx_context::new_id(ctx),
+            swords_created: 0
+        };
+
+        // transfer the forge object to the module publisher
+        transfer::transfer(admin, tx_context::sender(ctx));
+    }
+
     struct Sword has key, store {
         id: VersionedID,
         magic: u64,
@@ -16,7 +41,7 @@ module my_first_package::m1 {
         self.strength
     }
 
-    public entry fun sword_create(magic: u64, strength: u64, recipient: address, ctx: &mut TxContext) {
+    public entry fun sword_create(forge: &mut Forge, magic: u64, strength: u64, recipient: address, ctx: &mut TxContext) {
         use sui::transfer;
         // https://github.com/MystenLabs/sui/blob/main/crates/sui-framework/sources/tx_context.move
         use sui::tx_context;
@@ -28,6 +53,10 @@ module my_first_package::m1 {
             strength,
         };
 
+        // In order to use the forge, we need to modify the sword_create function to take the forge as a parameter
+        // and to update the number of created swords at the end of the function:
+        forge.swords_created = forge.swords_created + 1;
+
         // transfer the sword
         transfer::transfer(sword, recipient);
     }
@@ -37,6 +66,34 @@ module my_first_package::m1 {
 
         // transfer the sword
         transfer::transfer(sword, recipient);
+    }
+
+    #[test]
+    public fun test_module_init() {
+        use sui::test_scenario;
+
+        // create test address representing a game admin
+        let admin = @0xBABE;
+
+        // first transaction to emulate module initialization
+        let scenario = &mut test_scenario::begin(&admin);
+            {
+                init(test_scenario::ctx(scenario));
+            };
+
+        // second transaction to check if the forge has been created
+        // and has initial value of zero swords created
+        test_scenario::next_tx(scenario, &admin);
+            {
+                // extract the Forge object
+                let forge = test_scenario::take_owned<Forge>(scenario);
+                // verify number of created swords
+                assert!(
+                    sword_created((&forge)) == 0,
+                    1
+                );
+                test_scenario::return_owned(scenario, forge);
+            }
     }
 
     #[test]
@@ -72,18 +129,27 @@ module my_first_package::m1 {
         let initial_owner = @0xCAFE;
         let final_owner = @0xFACE;
 
+        // first transaction to emulate module initialization
+        let scenario1 = &mut test_scenario::begin(&admin);
+            {
+                init(test_scenario::ctx(scenario1));
+            };
+
         // first transaction executed by admin
         // We then create a scenario by starting the first transaction on behalf of the admin address
         // that creates a sword and transfers its ownership to the initial owner.
-        let scenario1 = &mut test_scenario::begin(&admin);
+        test_scenario::next_tx(scenario1, &admin);
             {
+                let forge = test_scenario::take_owned<Forge>(scenario1);
                 // create the sword and transfer it to the initial owner
                 sword_create(
+                    &mut forge,
                     42,
                     7,
                     initial_owner,
                     test_scenario::ctx(scenario1)
-                )
+                );
+                test_scenario::return_owned(scenario1, forge);
             };
 
         // second transaction executed by the initial sword owner
