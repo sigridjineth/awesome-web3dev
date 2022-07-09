@@ -1,0 +1,289 @@
+2022-07-08T17:38:55.383319Z  INFO sui::wallet_commands: [1m----- Certificate ----[0m
+2022-07-08T17:38:55.383478Z  INFO sui::wallet_commands: Transaction Hash: EgE+pwydtn/hmo/OVHqaX366Kj/+rshyRc9dTh/FyLU=
+2022-07-08T17:38:55.383483Z  INFO sui::wallet_commands: Transaction Signature: 9bsd2qj9pgIN4K7nPljDX0qNHWCtzESpwE3iNDVNflQ4UEijMKbpn9BUOlhyadTecppeMnMG25iB7z0Q3fLwDA==@owVFDiFH79k1g9wNnwlf56i12jPHJv37C9Q99mYM47M=
+2022-07-08T17:38:55.383489Z  INFO sui::wallet_commands: Signed Authorities : [k#1584ef2b677d6f5e96b57dac2744e9278aa24e117c7bfd6ac00bf43c1129c7fd, k#e97638a9e10b9cc46d85b81191a60a6a6fcae63dacd811c07502db9c5cfc55b5, k#89cafd721eeb1b13483d5fb0968500e78103e8146b45edb30d93781d946d0aeb]
+2022-07-08T17:38:55.383492Z  INFO sui::wallet_commands: Transaction Kind : Publish
+2022-07-08T17:38:55.383495Z  INFO sui::wallet_commands: [1m----- Publish Results ----[0m
+2022-07-08T17:38:55.383497Z  INFO sui::wallet_commands: [1mThe newly published package object ID: 0xdda7080b3cd80f9f4ce9176a564364b3cc338ba2
+2022-07-08T17:38:55.383500Z  INFO sui::wallet_commands: [0m
+2022-07-08T17:38:55.383502Z  INFO sui::wallet_commands: List of objects created by running module initializers:
+2022-07-08T17:38:55.383505Z  INFO sui::wallet_commands: [1m----- Move Object (0x4524dea2bb6c90ce3b0641bc01904d976fa6844a[1]) -----[0m
+2022-07-08T17:38:55.383508Z  INFO sui::wallet_commands: [1;90mOwner[0m: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T17:38:55.383510Z  INFO sui::wallet_commands: [1;90mVersion[0m: 1
+2022-07-08T17:38:55.383513Z  INFO sui::wallet_commands: [1;90mStorage Rebate[0m: 19
+2022-07-08T17:38:55.383515Z  INFO sui::wallet_commands: [1;90mPrevious Transaction[0m: EgE+pwydtn/hmo/OVHqaX366Kj/+rshyRc9dTh/FyLU=
+2022-07-08T17:38:55.383518Z  INFO sui::wallet_commands: [1m----- Data -----[0m
+2022-07-08T17:38:55.384831Z  INFO sui::wallet_commands: [1;90mtype[0m: 0xdda7080b3cd80f9f4ce9176a564364b3cc338ba2::sea_hero::SeaHeroAdmin
+2022-07-08T17:38:55.384864Z  INFO sui::wallet_commands: [1;90mid[0m: 0x4524dea2bb6c90ce3b0641bc01904d976fa6844a[1]
+2022-07-08T17:38:55.384871Z  INFO sui::wallet_commands: [1;90mmonster_max[0m: 10
+2022-07-08T17:38:55.384875Z  INFO sui::wallet_commands: [1;90mmonsters_created[0m: 0
+2022-07-08T17:38:55.384878Z  INFO sui::wallet_commands: [1;90mtoken_supply_max[0m: 1000000
+2022-07-08T17:38:55.384880Z  INFO sui::wallet_commands: [1;90mtreasury_cap[0m: 
+2022-07-08T17:38:55.384884Z  INFO sui::wallet_commands:   [1;90mtype[0m: 0x2::coin::TreasuryCap<0xdda7080b3cd80f9f4ce9176a564364b3cc338ba2::sea_hero::RUM>
+2022-07-08T17:38:55.384891Z  INFO sui::wallet_commands:   [1;90mid[0m: 0x698d079f5dade3b8bb01a5e3ca6d06a85a1ef373[0]
+2022-07-08T17:38:55.384893Z  INFO sui::wallet_commands:   [1;90mtotal_supply[0m: 0
+2022-07-08T17:38:55.384896Z  INFO sui::wallet_commands: 
+2022-07-08T17:38:55.384900Z  INFO sui::wallet_commands: [1m----- Move Object (0x499fcd93ebe5122c7cb7b775ee02705329a44836[1]) -----[0m
+2022-07-08T17:38:55.384903Z  INFO sui::wallet_commands: [1;90mOwner[0m: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T17:38:55.384905Z  INFO sui::wallet_commands: [1;90mVersion[0m: 1
+2022-07-08T17:38:55.384909Z  INFO sui::wallet_commands: [1;90mStorage Rebate[0m: 16
+2022-07-08T17:38:55.384912Z  INFO sui::wallet_commands: [1;90mPrevious Transaction[0m: EgE+pwydtn/hmo/OVHqaX366Kj/+rshyRc9dTh/FyLU=
+2022-07-08T17:38:55.384915Z  INFO sui::wallet_commands: [1m----- Data -----[0m
+2022-07-08T17:38:55.384917Z  INFO sui::wallet_commands: [1;90mtype[0m: 0xdda7080b3cd80f9f4ce9176a564364b3cc338ba2::hero::GameAdmin
+2022-07-08T17:38:55.384920Z  INFO sui::wallet_commands: [1;90mboars_created[0m: 0
+2022-07-08T17:38:55.384923Z  INFO sui::wallet_commands: [1;90mgame_id[0m: 0xd1c7ef2016d20bac0d6ec1475825c8a9c9b50e86
+2022-07-08T17:38:55.384925Z  INFO sui::wallet_commands: [1;90mid[0m: 0x499fcd93ebe5122c7cb7b775ee02705329a44836[1]
+2022-07-08T17:38:55.384928Z  INFO sui::wallet_commands: [1;90mpotions_created[0m: 0
+2022-07-08T17:38:55.384931Z  INFO sui::wallet_commands: 
+2022-07-08T17:38:55.386500Z  INFO sui::wallet_commands: [1m----- Move Object (0xd1c7ef2016d20bac0d6ec1475825c8a9c9b50e86[1]) -----[0m
+2022-07-08T17:38:55.386507Z  INFO sui::wallet_commands: [1;90mOwner[0m: Immutable
+2022-07-08T17:38:55.386510Z  INFO sui::wallet_commands: [1;90mVersion[0m: 1
+2022-07-08T17:38:55.386518Z  INFO sui::wallet_commands: [1;90mStorage Rebate[0m: 0
+2022-07-08T17:38:55.386521Z  INFO sui::wallet_commands: [1;90mPrevious Transaction[0m: EgE+pwydtn/hmo/OVHqaX366Kj/+rshyRc9dTh/FyLU=
+2022-07-08T17:38:55.386524Z  INFO sui::wallet_commands: [1m----- Data -----[0m
+2022-07-08T17:38:55.386526Z  INFO sui::wallet_commands: [1;90mtype[0m: 0xdda7080b3cd80f9f4ce9176a564364b3cc338ba2::hero::GameInfo
+2022-07-08T17:38:55.386529Z  INFO sui::wallet_commands: [1;90madmin[0m: 0x76705799eaef88a5378bf616fab44c96e0b8dc05
+2022-07-08T17:38:55.386532Z  INFO sui::wallet_commands: [1;90mid[0m: 0xd1c7ef2016d20bac0d6ec1475825c8a9c9b50e86[1]
+2022-07-08T17:38:55.386534Z  INFO sui::wallet_commands: 
+2022-07-08T17:38:55.386538Z  INFO sui::wallet_commands: Updated Gas : Coin { id: 0x152045509c335d7c0ee9c093513282f375cbe4cd, value: 42557 }
+2022-07-08T17:42:56.361886Z  INFO sui::wallet_commands: [1m----- Certificate ----[0m
+2022-07-08T17:42:56.362931Z  INFO sui::wallet_commands: Transaction Hash: W0/jT3YwJvyjH/pFUHaIXPQKUZ29wOsmhH9WxZtGw0o=
+2022-07-08T17:42:56.362941Z  INFO sui::wallet_commands: Transaction Signature: SS2gVVfTYwamE9T3xYwsX26GX4fWBVBb/jRN5EfuKVJfAYM48O6G21B+tnOWeGbVnHLfIy+zVYBKRE3MR4QLCA==@owVFDiFH79k1g9wNnwlf56i12jPHJv37C9Q99mYM47M=
+2022-07-08T17:42:56.362947Z  INFO sui::wallet_commands: Signed Authorities : [k#1584ef2b677d6f5e96b57dac2744e9278aa24e117c7bfd6ac00bf43c1129c7fd, k#e97638a9e10b9cc46d85b81191a60a6a6fcae63dacd811c07502db9c5cfc55b5, k#89cafd721eeb1b13483d5fb0968500e78103e8146b45edb30d93781d946d0aeb]
+2022-07-08T17:42:56.362952Z  INFO sui::wallet_commands: Transaction Kind : Call
+2022-07-08T17:42:56.362955Z  INFO sui::wallet_commands: Package ID : 0x40f0d61786419599f83e999cbae132daef98c061
+2022-07-08T17:42:56.362959Z  INFO sui::wallet_commands: Module : tic_tac_toe
+2022-07-08T17:42:56.362961Z  INFO sui::wallet_commands: Function : create_game
+2022-07-08T17:42:56.362965Z  INFO sui::wallet_commands: Arguments : ["0x9f67952f0fe64b790c169d6bc3e97f0275f9876d", "0x86e29705c42a304a85c16b095892e5c877768113"]
+2022-07-08T17:42:56.362968Z  INFO sui::wallet_commands: Type Arguments : []
+2022-07-08T17:42:56.362971Z  INFO sui::wallet_commands: [1m----- Transaction Effects ----[0m
+2022-07-08T17:42:56.362974Z  INFO sui::wallet_commands: Status : Success
+2022-07-08T17:42:56.362977Z  INFO sui::wallet_commands: Created Objects:
+2022-07-08T17:42:56.362980Z  INFO sui::wallet_commands:   - ID: 0x3c634998cc006c07ddd56f219bfc3596812d63ef , Owner: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T17:42:56.363024Z  INFO sui::wallet_commands:   - ID: 0x626c88d1c4628cea300974e3048ec232560cdf7b , Owner: Account Address ( 0x9f67952f0fe64b790c169d6bc3e97f0275f9876d )
+2022-07-08T17:42:56.363035Z  INFO sui::wallet_commands:   - ID: 0xc5ddff2d4eb83e2ab1057fe3add5f5ab5eb6cb67 , Owner: Account Address ( 0x86e29705c42a304a85c16b095892e5c877768113 )
+2022-07-08T17:42:56.363039Z  INFO sui::wallet_commands: Mutated Objects:
+2022-07-08T17:42:56.363043Z  INFO sui::wallet_commands:   - ID: 0x152045509c335d7c0ee9c093513282f375cbe4cd , Owner: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T18:02:24.768073Z  INFO sui::wallet_commands: [1m----- Move Object (0x3c634998cc006c07ddd56f219bfc3596812d63ef[1]) -----[0m
+2022-07-08T18:02:24.769049Z  INFO sui::wallet_commands: [1;90mOwner[0m: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T18:02:24.769053Z  INFO sui::wallet_commands: [1;90mVersion[0m: 1
+2022-07-08T18:02:24.769057Z  INFO sui::wallet_commands: [1;90mStorage Rebate[0m: 18
+2022-07-08T18:02:24.769058Z  INFO sui::wallet_commands: [1;90mPrevious Transaction[0m: W0/jT3YwJvyjH/pFUHaIXPQKUZ29wOsmhH9WxZtGw0o=
+2022-07-08T18:02:24.769060Z  INFO sui::wallet_commands: [1m----- Data -----[0m
+2022-07-08T18:02:24.769061Z  INFO sui::wallet_commands: [1;90mtype[0m: 0x40f0d61786419599f83e999cbae132daef98c061::tic_tac_toe::TicTacToe
+2022-07-08T18:02:24.769062Z  INFO sui::wallet_commands: [1;90mcur_turn[0m: 0
+2022-07-08T18:02:24.769064Z  INFO sui::wallet_commands: [1;90mgame_status[0m: 0
+2022-07-08T18:02:24.769065Z  INFO sui::wallet_commands: [1;90mgameboard[0m: 
+2022-07-08T18:02:24.769066Z  INFO sui::wallet_commands:   [1;90mtype[0m: 0x1::option::Option<0x40f0d61786419599f83e999cbae132daef98c061::tic_tac_toe::Mark>
+2022-07-08T18:02:24.769068Z  INFO sui::wallet_commands:   [1;90mvec[0m: [],
+2022-07-08T18:02:24.769069Z  INFO sui::wallet_commands: 
+2022-07-08T18:02:24.769071Z  INFO sui::wallet_commands:   [1;90mtype[0m: 0x1::option::Option<0x40f0d61786419599f83e999cbae132daef98c061::tic_tac_toe::Mark>
+2022-07-08T18:02:24.769072Z  INFO sui::wallet_commands:   [1;90mvec[0m: [],
+2022-07-08T18:02:24.769073Z  INFO sui::wallet_commands: 
+2022-07-08T18:02:24.769074Z  INFO sui::wallet_commands:   [1;90mtype[0m: 0x1::option::Option<0x40f0d61786419599f83e999cbae132daef98c061::tic_tac_toe::Mark>
+2022-07-08T18:02:24.769075Z  INFO sui::wallet_commands:   [1;90mvec[0m: [],
+2022-07-08T18:02:24.769077Z  INFO sui::wallet_commands: 
+2022-07-08T18:02:24.769078Z  INFO sui::wallet_commands:   [1;90mtype[0m: 0x1::option::Option<0x40f0d61786419599f83e999cbae132daef98c061::tic_tac_toe::Mark>
+2022-07-08T18:02:24.769079Z  INFO sui::wallet_commands:   [1;90mvec[0m: [],
+2022-07-08T18:02:24.769080Z  INFO sui::wallet_commands: 
+2022-07-08T18:02:24.769081Z  INFO sui::wallet_commands:   [1;90mtype[0m: 0x1::option::Option<0x40f0d61786419599f83e999cbae132daef98c061::tic_tac_toe::Mark>
+2022-07-08T18:02:24.769148Z  INFO sui::wallet_commands:   [1;90mvec[0m: [],
+2022-07-08T18:02:24.769154Z  INFO sui::wallet_commands: 
+2022-07-08T18:02:24.769156Z  INFO sui::wallet_commands:   [1;90mtype[0m: 0x1::option::Option<0x40f0d61786419599f83e999cbae132daef98c061::tic_tac_toe::Mark>
+2022-07-08T18:02:24.769158Z  INFO sui::wallet_commands:   [1;90mvec[0m: [],
+2022-07-08T18:02:24.769159Z  INFO sui::wallet_commands: 
+2022-07-08T18:02:24.769161Z  INFO sui::wallet_commands:   [1;90mtype[0m: 0x1::option::Option<0x40f0d61786419599f83e999cbae132daef98c061::tic_tac_toe::Mark>
+2022-07-08T18:02:24.769162Z  INFO sui::wallet_commands:   [1;90mvec[0m: [],
+2022-07-08T18:02:24.769163Z  INFO sui::wallet_commands: 
+2022-07-08T18:02:24.769165Z  INFO sui::wallet_commands:   [1;90mtype[0m: 0x1::option::Option<0x40f0d61786419599f83e999cbae132daef98c061::tic_tac_toe::Mark>
+2022-07-08T18:02:24.769166Z  INFO sui::wallet_commands:   [1;90mvec[0m: [],
+2022-07-08T18:02:24.769167Z  INFO sui::wallet_commands: 
+2022-07-08T18:02:24.769168Z  INFO sui::wallet_commands:   [1;90mtype[0m: 0x1::option::Option<0x40f0d61786419599f83e999cbae132daef98c061::tic_tac_toe::Mark>
+2022-07-08T18:02:24.769170Z  INFO sui::wallet_commands:   [1;90mvec[0m: []
+2022-07-08T18:02:24.769171Z  INFO sui::wallet_commands: [1;90mid[0m: 0x3c634998cc006c07ddd56f219bfc3596812d63ef[1]
+2022-07-08T18:02:24.769173Z  INFO sui::wallet_commands: [1;90mo_address[0m: 0x86e29705c42a304a85c16b095892e5c877768113
+2022-07-08T18:02:24.769174Z  INFO sui::wallet_commands: [1;90mx_address[0m: 0x9f67952f0fe64b790c169d6bc3e97f0275f9876d
+2022-07-08T18:04:08.848339Z  INFO sui::wallet_commands: [1m----- Move Object (0x626c88d1c4628cea300974e3048ec232560cdf7b[1]) -----[0m
+2022-07-08T18:04:08.849042Z  INFO sui::wallet_commands: [1;90mOwner[0m: Account Address ( 0x9f67952f0fe64b790c169d6bc3e97f0275f9876d )
+2022-07-08T18:04:08.849047Z  INFO sui::wallet_commands: [1;90mVersion[0m: 1
+2022-07-08T18:04:08.849049Z  INFO sui::wallet_commands: [1;90mStorage Rebate[0m: 15
+2022-07-08T18:04:08.849052Z  INFO sui::wallet_commands: [1;90mPrevious Transaction[0m: W0/jT3YwJvyjH/pFUHaIXPQKUZ29wOsmhH9WxZtGw0o=
+2022-07-08T18:04:08.849055Z  INFO sui::wallet_commands: [1m----- Data -----[0m
+2022-07-08T18:04:08.849058Z  INFO sui::wallet_commands: [1;90mtype[0m: 0x40f0d61786419599f83e999cbae132daef98c061::tic_tac_toe::MarkMintCap
+2022-07-08T18:04:08.849061Z  INFO sui::wallet_commands: [1;90mgame_id[0m: 0x3c634998cc006c07ddd56f219bfc3596812d63ef
+2022-07-08T18:04:08.849064Z  INFO sui::wallet_commands: [1;90mid[0m: 0x626c88d1c4628cea300974e3048ec232560cdf7b[1]
+2022-07-08T18:04:08.849066Z  INFO sui::wallet_commands: [1;90mremaining_supply[0m: 5
+2022-07-08T18:04:22.258670Z  INFO sui::wallet_commands: [1m----- Move Object (0xc5ddff2d4eb83e2ab1057fe3add5f5ab5eb6cb67[1]) -----[0m
+2022-07-08T18:04:22.258765Z  INFO sui::wallet_commands: [1;90mOwner[0m: Account Address ( 0x86e29705c42a304a85c16b095892e5c877768113 )
+2022-07-08T18:04:22.258771Z  INFO sui::wallet_commands: [1;90mVersion[0m: 1
+2022-07-08T18:04:22.258775Z  INFO sui::wallet_commands: [1;90mStorage Rebate[0m: 15
+2022-07-08T18:04:22.258780Z  INFO sui::wallet_commands: [1;90mPrevious Transaction[0m: W0/jT3YwJvyjH/pFUHaIXPQKUZ29wOsmhH9WxZtGw0o=
+2022-07-08T18:04:22.258785Z  INFO sui::wallet_commands: [1m----- Data -----[0m
+2022-07-08T18:04:22.258789Z  INFO sui::wallet_commands: [1;90mtype[0m: 0x40f0d61786419599f83e999cbae132daef98c061::tic_tac_toe::MarkMintCap
+2022-07-08T18:04:22.258793Z  INFO sui::wallet_commands: [1;90mgame_id[0m: 0x3c634998cc006c07ddd56f219bfc3596812d63ef
+2022-07-08T18:04:22.258797Z  INFO sui::wallet_commands: [1;90mid[0m: 0xc5ddff2d4eb83e2ab1057fe3add5f5ab5eb6cb67[1]
+2022-07-08T18:04:22.258802Z  INFO sui::wallet_commands: [1;90mremaining_supply[0m: 5
+2022-07-08T18:19:44.840666Z  INFO sui::wallet_commands: [1m----- Certificate ----[0m
+2022-07-08T18:19:44.841756Z  INFO sui::wallet_commands: Transaction Hash: vJiXHQsMIgFe2mbp1G7m+RiWg5R/YtMSOlCI0EoQ9Pc=
+2022-07-08T18:19:44.841762Z  INFO sui::wallet_commands: Transaction Signature: +DP8JpKSddvlHnvPlwJVp86utVKhOZ4STfF3pULfTgXpoDPfhw+mgad4jP5y8/YkwKnY6U0VkLjvJX6G8POKAA==@k5QrM7u5wDr6fjaw/lOqSogdqC4wZN0CLOixhAp1fVs=
+2022-07-08T18:19:44.841768Z  INFO sui::wallet_commands: Signed Authorities : [k#1584ef2b677d6f5e96b57dac2744e9278aa24e117c7bfd6ac00bf43c1129c7fd, k#e97638a9e10b9cc46d85b81191a60a6a6fcae63dacd811c07502db9c5cfc55b5, k#89cafd721eeb1b13483d5fb0968500e78103e8146b45edb30d93781d946d0aeb]
+2022-07-08T18:19:44.841772Z  INFO sui::wallet_commands: Transaction Kind : Call
+2022-07-08T18:19:44.841775Z  INFO sui::wallet_commands: Package ID : 0x40f0d61786419599f83e999cbae132daef98c061
+2022-07-08T18:19:44.841779Z  INFO sui::wallet_commands: Module : tic_tac_toe
+2022-07-08T18:19:44.841782Z  INFO sui::wallet_commands: Function : send_mark_to_game
+2022-07-08T18:19:44.841785Z  INFO sui::wallet_commands: Arguments : ["0x626c88d1c4628cea300974e3048ec232560cdf7b", "0x76705799eaef88a5378bf616fab44c96e0b8dc05", 1, 1]
+2022-07-08T18:19:44.841788Z  INFO sui::wallet_commands: Type Arguments : []
+2022-07-08T18:19:44.841792Z  INFO sui::wallet_commands: [1m----- Transaction Effects ----[0m
+2022-07-08T18:19:44.841795Z  INFO sui::wallet_commands: Status : Success
+2022-07-08T18:19:44.841798Z  INFO sui::wallet_commands: Created Objects:
+2022-07-08T18:19:44.841801Z  INFO sui::wallet_commands:   - ID: 0x722bcf515dc95162eaf06dee419d19839a61b7ee , Owner: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T18:19:44.841804Z  INFO sui::wallet_commands: Mutated Objects:
+2022-07-08T18:19:44.841992Z  INFO sui::wallet_commands:   - ID: 0x196609a5cd8518b53ddf0eed721343e378e3172e , Owner: Account Address ( 0x9f67952f0fe64b790c169d6bc3e97f0275f9876d )
+2022-07-08T18:19:44.842001Z  INFO sui::wallet_commands:   - ID: 0x626c88d1c4628cea300974e3048ec232560cdf7b , Owner: Account Address ( 0x9f67952f0fe64b790c169d6bc3e97f0275f9876d )
+2022-07-08T18:21:48.754402Z  INFO sui::wallet_commands: [1m----- Certificate ----[0m
+2022-07-08T18:21:48.756116Z  INFO sui::wallet_commands: Transaction Hash: hRKLRfvX2IUCSNX4Ru6ZVhRr8fdGOfo0NXGVKfXc7ps=
+2022-07-08T18:21:48.756124Z  INFO sui::wallet_commands: Transaction Signature: fDC61scsmmxTVPHaeAjJSkPTnYt0ID1/KVR0QS90UoSrrWQ5VxfpdXk9Y40uzhyJbluiV4YZKiEI/x6cyDk8AA==@OSbeYvM0jX5aGsLMtE1r/d3PQdukNnP0YNb1LSkAuY0=
+2022-07-08T18:21:48.756131Z  INFO sui::wallet_commands: Signed Authorities : [k#e97638a9e10b9cc46d85b81191a60a6a6fcae63dacd811c07502db9c5cfc55b5, k#1584ef2b677d6f5e96b57dac2744e9278aa24e117c7bfd6ac00bf43c1129c7fd, k#89cafd721eeb1b13483d5fb0968500e78103e8146b45edb30d93781d946d0aeb]
+2022-07-08T18:21:48.756136Z  INFO sui::wallet_commands: Transaction Kind : Call
+2022-07-08T18:21:48.756140Z  INFO sui::wallet_commands: Package ID : 0x40f0d61786419599f83e999cbae132daef98c061
+2022-07-08T18:21:48.756144Z  INFO sui::wallet_commands: Module : tic_tac_toe
+2022-07-08T18:21:48.756149Z  INFO sui::wallet_commands: Function : send_mark_to_game
+2022-07-08T18:21:48.756153Z  INFO sui::wallet_commands: Arguments : ["0xc5ddff2d4eb83e2ab1057fe3add5f5ab5eb6cb67", "0x76705799eaef88a5378bf616fab44c96e0b8dc05", 0, 0]
+2022-07-08T18:21:48.756158Z  INFO sui::wallet_commands: Type Arguments : []
+2022-07-08T18:21:48.756162Z  INFO sui::wallet_commands: [1m----- Transaction Effects ----[0m
+2022-07-08T18:21:48.756167Z  INFO sui::wallet_commands: Status : Success
+2022-07-08T18:21:48.756170Z  INFO sui::wallet_commands: Created Objects:
+2022-07-08T18:21:48.756175Z  INFO sui::wallet_commands:   - ID: 0xb45203a2418d9b018c7ac158af04a977b3c63691 , Owner: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T18:21:48.756179Z  INFO sui::wallet_commands: Mutated Objects:
+2022-07-08T18:21:48.756636Z  INFO sui::wallet_commands:   - ID: 0x4e9d5623831e046927cc8685f54facd28d4cdbe0 , Owner: Account Address ( 0x86e29705c42a304a85c16b095892e5c877768113 )
+2022-07-08T18:21:48.756646Z  INFO sui::wallet_commands:   - ID: 0xc5ddff2d4eb83e2ab1057fe3add5f5ab5eb6cb67 , Owner: Account Address ( 0x86e29705c42a304a85c16b095892e5c877768113 )
+2022-07-08T18:22:02.148230Z  INFO sui::wallet_commands: [1m----- Move Object (0xb45203a2418d9b018c7ac158af04a977b3c63691[1]) -----[0m
+2022-07-08T18:22:02.148525Z  INFO sui::wallet_commands: [1;90mOwner[0m: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T18:22:02.148529Z  INFO sui::wallet_commands: [1;90mVersion[0m: 1
+2022-07-08T18:22:02.148532Z  INFO sui::wallet_commands: [1;90mStorage Rebate[0m: 16
+2022-07-08T18:22:02.148535Z  INFO sui::wallet_commands: [1;90mPrevious Transaction[0m: hRKLRfvX2IUCSNX4Ru6ZVhRr8fdGOfo0NXGVKfXc7ps=
+2022-07-08T18:22:02.148539Z  INFO sui::wallet_commands: [1m----- Data -----[0m
+2022-07-08T18:22:02.148541Z  INFO sui::wallet_commands: [1;90mtype[0m: 0x40f0d61786419599f83e999cbae132daef98c061::tic_tac_toe::Mark
+2022-07-08T18:22:02.148544Z  INFO sui::wallet_commands: [1;90mcol[0m: 0
+2022-07-08T18:22:02.148546Z  INFO sui::wallet_commands: [1;90mid[0m: 0xb45203a2418d9b018c7ac158af04a977b3c63691[1]
+2022-07-08T18:22:02.148549Z  INFO sui::wallet_commands: [1;90mplayer[0m: 0x86e29705c42a304a85c16b095892e5c877768113
+2022-07-08T18:22:02.148551Z  INFO sui::wallet_commands: [1;90mrow[0m: 0
+2022-07-08T18:23:46.192043Z  INFO sui::wallet_commands: [1m----- Certificate ----[0m
+2022-07-08T18:23:46.193558Z  INFO sui::wallet_commands: Transaction Hash: 0HjmhaNFuZSvVcoa6NqStpfqHAOYXtjwzD5XchBOwUc=
+2022-07-08T18:23:46.193565Z  INFO sui::wallet_commands: Transaction Signature: u34K5YWlwtctPoCHhfPYXh/OVwxv7d8UDpFbUwCUJ3R+xNMIjK+TMIRn4CI0JoRCPg2BB00q/HgdixUO9wzoCA==@owVFDiFH79k1g9wNnwlf56i12jPHJv37C9Q99mYM47M=
+2022-07-08T18:23:46.193572Z  INFO sui::wallet_commands: Signed Authorities : [k#e97638a9e10b9cc46d85b81191a60a6a6fcae63dacd811c07502db9c5cfc55b5, k#1584ef2b677d6f5e96b57dac2744e9278aa24e117c7bfd6ac00bf43c1129c7fd, k#839e99f8b03f0f5563d6cd9cc39e10a8cf483ad2775aecbb927031370925ef4e]
+2022-07-08T18:23:46.193576Z  INFO sui::wallet_commands: Transaction Kind : Call
+2022-07-08T18:23:46.193580Z  INFO sui::wallet_commands: Package ID : 0x40f0d61786419599f83e999cbae132daef98c061
+2022-07-08T18:23:46.193583Z  INFO sui::wallet_commands: Module : tic_tac_toe
+2022-07-08T18:23:46.193587Z  INFO sui::wallet_commands: Function : place_mark
+2022-07-08T18:23:46.193590Z  INFO sui::wallet_commands: Arguments : ["0x3c634998cc006c07ddd56f219bfc3596812d63ef", "0xb45203a2418d9b018c7ac158af04a977b3c63691"]
+2022-07-08T18:23:46.193594Z  INFO sui::wallet_commands: Type Arguments : []
+2022-07-08T18:23:46.193597Z  INFO sui::wallet_commands: [1m----- Transaction Effects ----[0m
+2022-07-08T18:23:46.193600Z  INFO sui::wallet_commands: Status : Success
+2022-07-08T18:23:46.193603Z  INFO sui::wallet_commands: Mutated Objects:
+2022-07-08T18:23:46.193606Z  INFO sui::wallet_commands:   - ID: 0x152045509c335d7c0ee9c093513282f375cbe4cd , Owner: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T18:23:46.193863Z  INFO sui::wallet_commands:   - ID: 0x3c634998cc006c07ddd56f219bfc3596812d63ef , Owner: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T18:23:46.193871Z  INFO sui::wallet_commands: Deleted Objects:
+2022-07-08T18:23:46.193875Z  INFO sui::wallet_commands:   - ID: 0xb45203a2418d9b018c7ac158af04a977b3c63691
+2022-07-08T18:26:25.034332Z  INFO sui::wallet_commands: [1m----- Certificate ----[0m
+2022-07-08T18:26:25.036719Z  INFO sui::wallet_commands: Transaction Hash: 8v0vmRT5mRLdLDUntsPAHVsP6tOFJKuxxG5Nh5g1hVQ=
+2022-07-08T18:26:25.036728Z  INFO sui::wallet_commands: Transaction Signature: +CW4E3NaYg153Jj1Axx4dk2jd7/JejwhJ5N+TXaI7rI2ZyZtjAJ/ZoBRuaOd5/Tnan9mieLR8/3O1iHdR7ioDw==@k5QrM7u5wDr6fjaw/lOqSogdqC4wZN0CLOixhAp1fVs=
+2022-07-08T18:26:25.036736Z  INFO sui::wallet_commands: Signed Authorities : [k#1584ef2b677d6f5e96b57dac2744e9278aa24e117c7bfd6ac00bf43c1129c7fd, k#e97638a9e10b9cc46d85b81191a60a6a6fcae63dacd811c07502db9c5cfc55b5, k#839e99f8b03f0f5563d6cd9cc39e10a8cf483ad2775aecbb927031370925ef4e]
+2022-07-08T18:26:25.036740Z  INFO sui::wallet_commands: Transaction Kind : Call
+2022-07-08T18:26:25.036746Z  INFO sui::wallet_commands: Package ID : 0x40f0d61786419599f83e999cbae132daef98c061
+2022-07-08T18:26:25.036749Z  INFO sui::wallet_commands: Module : tic_tac_toe
+2022-07-08T18:26:25.036751Z  INFO sui::wallet_commands: Function : send_mark_to_game
+2022-07-08T18:26:25.036755Z  INFO sui::wallet_commands: Arguments : ["0x626c88d1c4628cea300974e3048ec232560cdf7b", "0x76705799eaef88a5378bf616fab44c96e0b8dc05", 0, 2]
+2022-07-08T18:26:25.036759Z  INFO sui::wallet_commands: Type Arguments : []
+2022-07-08T18:26:25.036762Z  INFO sui::wallet_commands: [1m----- Transaction Effects ----[0m
+2022-07-08T18:26:25.036765Z  INFO sui::wallet_commands: Status : Success
+2022-07-08T18:26:25.036768Z  INFO sui::wallet_commands: Created Objects:
+2022-07-08T18:26:25.036771Z  INFO sui::wallet_commands:   - ID: 0xbc1eb09f1d88014774f11832b6a88385dfd9df5b , Owner: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T18:26:25.036774Z  INFO sui::wallet_commands: Mutated Objects:
+2022-07-08T18:26:25.036824Z  INFO sui::wallet_commands:   - ID: 0x196609a5cd8518b53ddf0eed721343e378e3172e , Owner: Account Address ( 0x9f67952f0fe64b790c169d6bc3e97f0275f9876d )
+2022-07-08T18:26:25.036831Z  INFO sui::wallet_commands:   - ID: 0x626c88d1c4628cea300974e3048ec232560cdf7b , Owner: Account Address ( 0x9f67952f0fe64b790c169d6bc3e97f0275f9876d )
+2022-07-08T18:27:09.812415Z  INFO sui::wallet_commands: [1m----- Certificate ----[0m
+2022-07-08T18:27:09.814252Z  INFO sui::wallet_commands: Transaction Hash: wV/biIdShmsmD4k6Tox9bPp12dFB68YLV5h5hSARaUc=
+2022-07-08T18:27:09.814263Z  INFO sui::wallet_commands: Transaction Signature: 3yd/U+YCZkIrhzvGDb065D8uBnUnsh0cSAo40KQlDhtoFE8ls3ENzqEZbfPUWyqtJlGUycSuUSPKUKm3XKloDQ==@owVFDiFH79k1g9wNnwlf56i12jPHJv37C9Q99mYM47M=
+2022-07-08T18:27:09.814273Z  INFO sui::wallet_commands: Signed Authorities : [k#e97638a9e10b9cc46d85b81191a60a6a6fcae63dacd811c07502db9c5cfc55b5, k#1584ef2b677d6f5e96b57dac2744e9278aa24e117c7bfd6ac00bf43c1129c7fd, k#89cafd721eeb1b13483d5fb0968500e78103e8146b45edb30d93781d946d0aeb]
+2022-07-08T18:27:09.814277Z  INFO sui::wallet_commands: Transaction Kind : Call
+2022-07-08T18:27:09.814281Z  INFO sui::wallet_commands: Package ID : 0x40f0d61786419599f83e999cbae132daef98c061
+2022-07-08T18:27:09.814284Z  INFO sui::wallet_commands: Module : tic_tac_toe
+2022-07-08T18:27:09.814287Z  INFO sui::wallet_commands: Function : place_mark
+2022-07-08T18:27:09.814290Z  INFO sui::wallet_commands: Arguments : ["0x3c634998cc006c07ddd56f219bfc3596812d63ef", "0xbc1eb09f1d88014774f11832b6a88385dfd9df5b"]
+2022-07-08T18:27:09.814294Z  INFO sui::wallet_commands: Type Arguments : []
+2022-07-08T18:27:09.814297Z  INFO sui::wallet_commands: [1m----- Transaction Effects ----[0m
+2022-07-08T18:27:09.814299Z  INFO sui::wallet_commands: Status : Success
+2022-07-08T18:27:09.814302Z  INFO sui::wallet_commands: Mutated Objects:
+2022-07-08T18:27:09.814305Z  INFO sui::wallet_commands:   - ID: 0x152045509c335d7c0ee9c093513282f375cbe4cd , Owner: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T18:27:09.814309Z  INFO sui::wallet_commands:   - ID: 0x3c634998cc006c07ddd56f219bfc3596812d63ef , Owner: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T18:27:09.814312Z  INFO sui::wallet_commands: Wrapped Objects:
+2022-07-08T18:27:09.814314Z  INFO sui::wallet_commands:   - ID: 0xbc1eb09f1d88014774f11832b6a88385dfd9df5b
+2022-07-08T18:27:42.356096Z  INFO sui::wallet_commands: [1m----- Certificate ----[0m
+2022-07-08T18:27:42.356578Z  INFO sui::wallet_commands: Transaction Hash: WDaf2+RkKl5gC7QIP1gpKNHdS594rIlEI7+8QP0yi3k=
+2022-07-08T18:27:42.356591Z  INFO sui::wallet_commands: Transaction Signature: YfrFLHizLg+MHCA18l7ZXk8d7mFL3pcnJLf6V93gtFGZmDEVVHkFjcmNt5WzIkFWCJmUJOb/v7ue87XWUXeFDg==@OSbeYvM0jX5aGsLMtE1r/d3PQdukNnP0YNb1LSkAuY0=
+2022-07-08T18:27:42.356593Z  INFO sui::wallet_commands: Signed Authorities : [k#1584ef2b677d6f5e96b57dac2744e9278aa24e117c7bfd6ac00bf43c1129c7fd, k#e97638a9e10b9cc46d85b81191a60a6a6fcae63dacd811c07502db9c5cfc55b5, k#839e99f8b03f0f5563d6cd9cc39e10a8cf483ad2775aecbb927031370925ef4e]
+2022-07-08T18:27:42.356595Z  INFO sui::wallet_commands: Transaction Kind : Call
+2022-07-08T18:27:42.356597Z  INFO sui::wallet_commands: Package ID : 0x40f0d61786419599f83e999cbae132daef98c061
+2022-07-08T18:27:42.356598Z  INFO sui::wallet_commands: Module : tic_tac_toe
+2022-07-08T18:27:42.356600Z  INFO sui::wallet_commands: Function : send_mark_to_game
+2022-07-08T18:27:42.356602Z  INFO sui::wallet_commands: Arguments : ["0xc5ddff2d4eb83e2ab1057fe3add5f5ab5eb6cb67", "0x76705799eaef88a5378bf616fab44c96e0b8dc05", 1, 0]
+2022-07-08T18:27:42.356603Z  INFO sui::wallet_commands: Type Arguments : []
+2022-07-08T18:27:42.356605Z  INFO sui::wallet_commands: [1m----- Transaction Effects ----[0m
+2022-07-08T18:27:42.356607Z  INFO sui::wallet_commands: Status : Success
+2022-07-08T18:27:42.356608Z  INFO sui::wallet_commands: Created Objects:
+2022-07-08T18:27:42.356610Z  INFO sui::wallet_commands:   - ID: 0xf123a4df1011044ff94262e895b0e4914cade7d1 , Owner: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T18:27:42.356611Z  INFO sui::wallet_commands: Mutated Objects:
+2022-07-08T18:27:42.356633Z  INFO sui::wallet_commands:   - ID: 0x4e9d5623831e046927cc8685f54facd28d4cdbe0 , Owner: Account Address ( 0x86e29705c42a304a85c16b095892e5c877768113 )
+2022-07-08T18:27:42.356639Z  INFO sui::wallet_commands:   - ID: 0xc5ddff2d4eb83e2ab1057fe3add5f5ab5eb6cb67 , Owner: Account Address ( 0x86e29705c42a304a85c16b095892e5c877768113 )
+2022-07-08T18:28:15.225761Z  INFO sui::wallet_commands: [1m----- Certificate ----[0m
+2022-07-08T18:28:15.225782Z  INFO sui::wallet_commands: Transaction Hash: IY4qwWI04PrsY4L3OeglPdJeJWxQWQds30CxgxPJXq4=
+2022-07-08T18:28:15.225785Z  INFO sui::wallet_commands: Transaction Signature: IV6ZoJ1DrZ4iiXQMY4rtduCr/pU/PSLBvo2YdzFiVCruTjM/EX1j4Vo1WiiX0GdwSnpVE0EZt5On6lbQ3syTDA==@owVFDiFH79k1g9wNnwlf56i12jPHJv37C9Q99mYM47M=
+2022-07-08T18:28:15.225787Z  INFO sui::wallet_commands: Signed Authorities : [k#1584ef2b677d6f5e96b57dac2744e9278aa24e117c7bfd6ac00bf43c1129c7fd, k#e97638a9e10b9cc46d85b81191a60a6a6fcae63dacd811c07502db9c5cfc55b5, k#89cafd721eeb1b13483d5fb0968500e78103e8146b45edb30d93781d946d0aeb]
+2022-07-08T18:28:15.225788Z  INFO sui::wallet_commands: Transaction Kind : Call
+2022-07-08T18:28:15.225789Z  INFO sui::wallet_commands: Package ID : 0x40f0d61786419599f83e999cbae132daef98c061
+2022-07-08T18:28:15.225790Z  INFO sui::wallet_commands: Module : tic_tac_toe
+2022-07-08T18:28:15.225791Z  INFO sui::wallet_commands: Function : place_mark
+2022-07-08T18:28:15.225793Z  INFO sui::wallet_commands: Arguments : ["0x3c634998cc006c07ddd56f219bfc3596812d63ef", "0xf123a4df1011044ff94262e895b0e4914cade7d1"]
+2022-07-08T18:28:15.225794Z  INFO sui::wallet_commands: Type Arguments : []
+2022-07-08T18:28:15.225795Z  INFO sui::wallet_commands: [1m----- Transaction Effects ----[0m
+2022-07-08T18:28:15.225796Z  INFO sui::wallet_commands: Status : Success
+2022-07-08T18:28:15.225797Z  INFO sui::wallet_commands: Mutated Objects:
+2022-07-08T18:28:15.225798Z  INFO sui::wallet_commands:   - ID: 0x152045509c335d7c0ee9c093513282f375cbe4cd , Owner: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T18:28:15.225833Z  INFO sui::wallet_commands:   - ID: 0x3c634998cc006c07ddd56f219bfc3596812d63ef , Owner: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T18:28:15.225836Z  INFO sui::wallet_commands: Wrapped Objects:
+2022-07-08T18:28:15.225837Z  INFO sui::wallet_commands:   - ID: 0xf123a4df1011044ff94262e895b0e4914cade7d1
+2022-07-08T18:28:43.484864Z  INFO sui::wallet_commands: [1m----- Certificate ----[0m
+2022-07-08T18:28:43.484900Z  INFO sui::wallet_commands: Transaction Hash: qYq2gNrKNXHmmO4cSJgNVa+omN4jGyOLey0FA6lWm40=
+2022-07-08T18:28:43.484905Z  INFO sui::wallet_commands: Transaction Signature: tArj9aXZqwcQaITZuCiVm1GyeCG6tzR/4Kp3Bzv2Zpu0GHkLVq3hwyyQHdC9HRhKFOpR2rw1AjkJY2Ih2oD0BQ==@k5QrM7u5wDr6fjaw/lOqSogdqC4wZN0CLOixhAp1fVs=
+2022-07-08T18:28:43.484909Z  INFO sui::wallet_commands: Signed Authorities : [k#1584ef2b677d6f5e96b57dac2744e9278aa24e117c7bfd6ac00bf43c1129c7fd, k#e97638a9e10b9cc46d85b81191a60a6a6fcae63dacd811c07502db9c5cfc55b5, k#89cafd721eeb1b13483d5fb0968500e78103e8146b45edb30d93781d946d0aeb]
+2022-07-08T18:28:43.484912Z  INFO sui::wallet_commands: Transaction Kind : Call
+2022-07-08T18:28:43.484915Z  INFO sui::wallet_commands: Package ID : 0x40f0d61786419599f83e999cbae132daef98c061
+2022-07-08T18:28:43.484918Z  INFO sui::wallet_commands: Module : tic_tac_toe
+2022-07-08T18:28:43.484921Z  INFO sui::wallet_commands: Function : send_mark_to_game
+2022-07-08T18:28:43.484924Z  INFO sui::wallet_commands: Arguments : ["0x626c88d1c4628cea300974e3048ec232560cdf7b", "0x76705799eaef88a5378bf616fab44c96e0b8dc05", 2, 0]
+2022-07-08T18:28:43.484927Z  INFO sui::wallet_commands: Type Arguments : []
+2022-07-08T18:28:43.484929Z  INFO sui::wallet_commands: [1m----- Transaction Effects ----[0m
+2022-07-08T18:28:43.484932Z  INFO sui::wallet_commands: Status : Success
+2022-07-08T18:28:43.484934Z  INFO sui::wallet_commands: Created Objects:
+2022-07-08T18:28:43.484937Z  INFO sui::wallet_commands:   - ID: 0x569c4fba959bbab3297760f2f6ea70807c87efa4 , Owner: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T18:28:43.484940Z  INFO sui::wallet_commands: Mutated Objects:
+2022-07-08T18:28:43.487409Z  INFO sui::wallet_commands:   - ID: 0x196609a5cd8518b53ddf0eed721343e378e3172e , Owner: Account Address ( 0x9f67952f0fe64b790c169d6bc3e97f0275f9876d )
+2022-07-08T18:28:43.487421Z  INFO sui::wallet_commands:   - ID: 0x626c88d1c4628cea300974e3048ec232560cdf7b , Owner: Account Address ( 0x9f67952f0fe64b790c169d6bc3e97f0275f9876d )
+2022-07-08T18:29:23.593819Z  INFO sui::wallet_commands: [1m----- Certificate ----[0m
+2022-07-08T18:29:23.593901Z  INFO sui::wallet_commands: Transaction Hash: 9u06H8fVBBxOPL2nLTx8XrgiAwFc3538IhD/lUAs17M=
+2022-07-08T18:29:23.593907Z  INFO sui::wallet_commands: Transaction Signature: 88jRVAuWJ0TLJ2kvDSK3fyQgTy9Qq3hPJXrj3R2m30pUMO/mpBMymSI2H3BF4N/joZ8no2AldGmZMvtWm/2UCA==@owVFDiFH79k1g9wNnwlf56i12jPHJv37C9Q99mYM47M=
+2022-07-08T18:29:23.593911Z  INFO sui::wallet_commands: Signed Authorities : [k#1584ef2b677d6f5e96b57dac2744e9278aa24e117c7bfd6ac00bf43c1129c7fd, k#e97638a9e10b9cc46d85b81191a60a6a6fcae63dacd811c07502db9c5cfc55b5, k#839e99f8b03f0f5563d6cd9cc39e10a8cf483ad2775aecbb927031370925ef4e]
+2022-07-08T18:29:23.593914Z  INFO sui::wallet_commands: Transaction Kind : Call
+2022-07-08T18:29:23.593917Z  INFO sui::wallet_commands: Package ID : 0x40f0d61786419599f83e999cbae132daef98c061
+2022-07-08T18:29:23.593919Z  INFO sui::wallet_commands: Module : tic_tac_toe
+2022-07-08T18:29:23.593921Z  INFO sui::wallet_commands: Function : place_mark
+2022-07-08T18:29:23.593925Z  INFO sui::wallet_commands: Arguments : ["0x3c634998cc006c07ddd56f219bfc3596812d63ef", "0x569c4fba959bbab3297760f2f6ea70807c87efa4"]
+2022-07-08T18:29:23.593928Z  INFO sui::wallet_commands: Type Arguments : []
+2022-07-08T18:29:23.593931Z  INFO sui::wallet_commands: [1m----- Transaction Effects ----[0m
+2022-07-08T18:29:23.593933Z  INFO sui::wallet_commands: Status : Success
+2022-07-08T18:29:23.593936Z  INFO sui::wallet_commands: Mutated Objects:
+2022-07-08T18:29:23.593938Z  INFO sui::wallet_commands:   - ID: 0x152045509c335d7c0ee9c093513282f375cbe4cd , Owner: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T18:29:23.594336Z  INFO sui::wallet_commands:   - ID: 0x3c634998cc006c07ddd56f219bfc3596812d63ef , Owner: Account Address ( 0x76705799eaef88a5378bf616fab44c96e0b8dc05 )
+2022-07-08T18:29:23.594340Z  INFO sui::wallet_commands: Wrapped Objects:
+2022-07-08T18:29:23.594342Z  INFO sui::wallet_commands:   - ID: 0x569c4fba959bbab3297760f2f6ea70807c87efa4
