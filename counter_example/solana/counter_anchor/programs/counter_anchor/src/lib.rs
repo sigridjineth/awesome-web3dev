@@ -38,6 +38,12 @@ pub mod counter_anchor {
         counter_account.count = 0;
         return Ok(())
     }
+
+    pub fn reset(ctx: Context<Reset>, reset: u64) -> Result<()> {
+        let counter_account = &mut ctx.accounts.counter_account;
+        counter_account.count = reset;
+        return Ok(())
+    }
 }
 
 /*
@@ -86,6 +92,12 @@ pub struct Increase<'info> {
 
 #[derive(Accounts)]
 pub struct Decrease<'info> {
+    #[account(mut)]
+    pub counter_account: Account<'info, Counter>
+}
+
+#[derive(Accounts)]
+pub struct Reset<'info> {
     #[account(mut)]
     pub counter_account: Account<'info, Counter>
 }

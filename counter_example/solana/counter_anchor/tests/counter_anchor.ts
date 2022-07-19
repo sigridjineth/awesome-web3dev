@@ -98,4 +98,20 @@ describe("counter_anchor", async () => {
     const counter = await program.account.counter.fetch(counterAccount);
     assert.ok(counter.count.toString() === NUMBER_ZERO);
   });
+
+  it("should reset counts to `23923`", async() => {
+    // given
+    const NUMBER_23923 = "23923";
+
+    // when
+    await program.rpc.reset(new anchor.BN(NUMBER_23923), {
+      accounts: {
+        counterAccount: counterAccount
+      }
+    })
+
+    // then
+    const counter = await program.account.counter.fetch(counterAccount);
+    assert.ok(counter.count.toString() === NUMBER_23923);
+  })
 });
